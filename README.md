@@ -74,7 +74,7 @@ export class Developer {
 
   <br>
   <a href="https://github-contributor-stats.vercel.app/api?username=akki120781&limit=3&theme=tokyonight&combine_all_yearly_contributions=true">
-  <img src="https://github-readme-stats.vercel.app/api?username=akki120781&show_icons=true&theme=tokyonight&hide_border=true&v=1" alt="GitHub Stats" width="48%" height="170" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=akki120781&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" width="48%" height="170" />
   <br>
   
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=akki120781&area=true&theme=tokyonight" alt="Profile Details" width="80%" height="200"/>
