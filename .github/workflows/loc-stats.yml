@@ -60,6 +60,14 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          
+          # Only stage the files we actually care about
           git add loc-stats.svg loc-data.json README.md
-          git diff --quiet && git diff --staged --quiet || git commit -m "chore: update LOC statistics [skip ci]"
-          git push
+          
+          # Check if any of THOSE specific files have staged changes
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update LOC statistics [skip ci]"
+            git push
+          else
+            echo "No LOC changes to commit. Skipping push."
+          fi
